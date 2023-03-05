@@ -69,8 +69,7 @@
               <span class="text-muted small">Recovered Value</span><br />
               <span class="fw-bold">$8,638</span>
             </div>
-            <div class="col-4">
-            </div>
+            <div class="col-4"></div>
           </div>
         </div>
       </div>
@@ -78,24 +77,23 @@
       <div class="col-md-4 mb-3">
         <div class="card h-100 p-3 border-0" style="border-radius: 10px">
           <div class="cus-small-tab">
-          <ul class="nav nav-pills nav-fill mb-2">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">On Site</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Turo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Website</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tolls</a>
-            </li>
-          </ul>
+            <ul class="nav nav-pills nav-fill mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">On Site</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Turo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Website</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tolls</a>
+              </li>
+            </ul>
           </div>
 
-
-          <CusLineChart :chartData="chartDataOne"  />
+          <CusLineChart :chartData="chartDataOne" />
 
           <div class="row m-0 mt-3">
             <div class="col-6 p-0 mb-2">
@@ -197,7 +195,7 @@
       <div class="col-md-8 mb-3">
         <div class="card h-100 p-3 border-0" style="border-radius: 10px">
           <h6 class="fw-bold">Rental Analytics</h6>
-          <CusLineChart :chartData="chartDataTwo"  />
+          <CusLineChart :chartData="chartDataTwo" />
         </div>
       </div>
 
@@ -212,11 +210,10 @@
               +
             </button>
           </div>
-          
+
           <TopPerformingCar />
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -228,7 +225,7 @@ import BestPerformingCar from "@/components/cards/BestPerformingCar.vue";
 import TopPerformingCar from "@/components/cards/TopPerformingCar.vue";
 
 export default {
-  name: "HomeView",
+  name: "DashboardView",
   components: {
     CusLineChart,
     OngoingReservation,
